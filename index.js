@@ -63,19 +63,49 @@
 
 // Multiplication Tables. Show the Multiplication Table for every multiplier from 1-10.
 
-alert("Multiplication Tables. Check the console!")
-
-for (var multiplier = 0; multiplier <= 10; multiplier++) {
-	for (var i = 0; i <= 10; i++) {
-   var answer = multiplier * i;
-   console.log(multiplier + " * " + i + " = " + answer);
- }
-}
+// alert("Multiplication Tables. Check the console!")
+//
+// for (var multiplier = 0; multiplier <= 10; multiplier++) {
+// 	for (var i = 0; i <= 10; i++) {
+//    var answer = multiplier * i;
+//    console.log(multiplier + " * " + i + " = " + answer);
+//  }
+// }
 
 // FOR LOOPS END
 
 // WHILE LOOPS START
 
+// Simple Loop.
 
+// alert("Simple Loop. Check the Console!")
+//
+// var i = 1
+//
+// while(i <= 10){
+// 	if (i === 1) {
+// 		console.log("We have looped " + i + " time.");
+// 	} else {
+// 		console.log("We have looped " + i + " times.");
+// 	}
+// 	i++;
+// }
+
+// Multiples from User Input.
+
+var userNumber = prompt("Enter a number 1-10.");
+alert("We have counted up to 100 by multiples of " + userNumber + ". Check the console!");
+
+var i = 1
+
+while (i <= 50) {
+	if ((i*userNumber) <= 100) {
+		console.log(i * userNumber);
+		i++;
+	} else {
+		console.log("The loop is over!");
+		i=100;
+	}
+}
 
 // WHILE LOOPS END
